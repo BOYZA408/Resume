@@ -6,8 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/style.css" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="jquery.lineProgressbar.css" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="jquery.lineProgressbar.js"></script>
         <style>
         @font-face {
             font-family:test;
@@ -124,11 +126,20 @@
         </div>
         <!--skill-->
         <div class="container-fluid bg3">
+            <div id="jq"></div>
         </div>
         <!--skill-->
         <div class="container-fluid">
         </div>
         <script>
+            $('#jq').LineProgressbar({
+              percentage: 90,
+              fillBackgroundColor: '#3498db',
+              backgroundColor: '#EEEEEE',
+              radius: '0px',
+              height: '10px',
+              width: '100%'
+});
         </script>
     </body>
 </html>
